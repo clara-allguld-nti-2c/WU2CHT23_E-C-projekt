@@ -1,0 +1,142 @@
+* {
+    margin: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  #gridwrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 500px 500px 500px 500px;
+      grid-template-areas: 
+      "hea hea hea hea"
+      "tex tex tex tex"
+      "se1 se2 se3 se4"
+      "se5 se6 se7 se8"
+      "se9 s10 s11 s12"
+      "foo foo foo foo"
+      ;
+  }
+  
+  header { 
+      background: white;
+      display: flex;
+      align-items: center;
+  }
+  
+  main {
+      background: gray;
+      color: black;
+      align-items: center;
+      justify-items: center;
+  
+  }
+  
+  ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      font-size: 15mm;
+      
+
+  }
+  
+  a {
+      text-decoration: none;
+      color: black;
+  }
+  a:hover {
+      color: rgb(95, 38, 151);
+  }
+  
+  
+  
+  #section1 {
+      grid-area: se1;
+      /*background-image: url("../IMG/amazonas.jpg"); */
+      background-size: cover;
+      background-color: grey;
+  }
+  
+  #section2 {
+      grid-area: se2;
+      background-image: url("../IMG/northernlights.jpg");
+      background-size: cover;
+      background-color: grey;
+  }
+  
+  #section3 {
+      grid-area: se3;
+      background-image: url("../IMG/hawaii.jpg");
+      background-size: cover;
+      background-color: grey;
+  }
+  
+  #section4 {
+      grid-area: se4;
+      background-image: url("../IMG/new_york.jpg");
+      background-size: cover;
+      background-color: grey;
+  }
+  
+  #section5 {
+      grid-area: se5;
+      background-image: url("../IMG/rio.jpg");
+      background-size: cover;
+      background-color: grey;
+  }
+  
+  #section6 {
+      grid-area: se6;
+      background-image: url("../IMG/sahara.jpg");
+      background-size: cover;
+      background-color: grey;
+  }
+  
+  #section7 {
+      grid-area: se7;
+      background-image: url("../IMG/water.jpg");
+      background-size: cover;
+      background-color: grey;
+  }
+
+  #section8 {
+    grid-area: se8;
+    /*background-image: url("../IMG/amazonas.jpg"); */
+    background-size: cover;
+    background-color: grey;
+  }
+
+  #section9 {
+    grid-area: se9;
+    /*background-image: url("../IMG/amazonas.jpg"); */
+    background-size: cover;
+    background-color: grey;
+  }
+
+  #section10 {
+    grid-area: s10;
+    /*background-image: url("../IMG/amazonas.jpg"); */
+    background-size: cover;
+    background-color: grey;
+  }
+
+  #section11 {
+    grid-area: s11;
+    /*background-image: url("../IMG/amazonas.jpg"); */
+    background-size: cover;
+    background-color: grey;
+  }
+
+  #section11 {
+    grid-area: s11;
+    /*background-image: url("../IMG/amazonas.jpg"); */
+    background-size: cover;
+    background-color: grey;
+  }
+
+  #text {
+    grid-area: tex;
+    /*background-image: url("../IMG/amazonas.jpg"); */
+    background-size: cover;
+    background-color: gray;
+  }
