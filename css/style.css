@@ -1,104 +1,203 @@
+@font-face {
+    font-family: Rubik Doodle Shadow-Regular;
+    src: url(../fonts/RubikDoodleShadow-Regular.ttf);
+}
+@font-face {
+    font-family: Fredericka the Great;
+    src: url(../fonts/FrederickatheGreat-Regular.ttf);
+}
+
+@font-face {
+    font-family: CabinSketch-Regular;
+    src: url(../fonts/CabinSketch-Regular.ttf);
+}
+
+@font-face {
+    font-family: CabinSketch-Bold;
+    src: url(../fonts/CabinSketch-Bold.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
+  #gridwrapper_startsida {
+    margin: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: grid;
+    height: 100vh;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-areas: 
+    "s09"
+    "s10"
+    ;
+}
+
   #gridwrapper_card {
       margin: 15px;
       padding: 10px;
       box-sizing: border-box;
       display: grid;
       height: 100vh;
+      align-content: space-evenly;
+      justify-content: center;
+      text-align: center;
       
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 2fr 2fr;
       column-gap: 30px;
       row-gap: 30px;
       grid-template-areas: 
+      
       "tex tex tex tex"
       "s01 s02 s03 s04"
-      "s05 s06 s07 s08"
-      "s09 s10 s11 s12"
+      "s05 s06 s07 s08" 
       ;
   }
-  
+
+  #gridwrapper_omoss {
+    margin: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: grid;
+    height: 100vh;
+
+    
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 80px 100px 200px 300px minmax(100px, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-areas: 
+    "s11 s11"
+    "s12 s13"
+    "s14 s13"
+    ;
+}
+
+ 
   header { 
-      background: fuchsia;
+      background: rgb(46, 204, 113);
       display: flex;
       align-items: center;
-      height: 100px;
+      height: 90px;
+      justify-content: space-around;
   }
   
   main {
       background: white;
-      color: black;
+      color: black; 
+      padding-top: 20px; 
   }
   
   ul {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       list-style: none;
-      width: 1230px;
-      align-items: center;
+      width: 100%;
+      align-items: stretch;
+      text-align: center;
+      flex-basis: auto:
   }
-  
+
   a {
       text-decoration: none;
-      color: black;
+      color: white;
       font-size: 30px;
+      font-family: CabinSketch-Bold;
   }
+
   a:hover {
-      color: rgb(95, 38, 151);
+      color: rgb(204, 46, 137);
   }
 
   #text {
     grid-area: tex;
-    background-color: brown;
+    background-color: white;
+    font-family: 
+    font-size: 1.5rem;
+    margin-top: 100px;
   }
+ 
+  #section1,
+  #section3,
+  #section5,
+  #section7,
+  #section8, 
+  #section2,
+  #section4,
+  #section6, 
+  #section7,
+  #section8 {
+      background-size: cover;
+      width: 175px;
+      height: 250px;
+      object-fit: cover;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      display: block;
+    margin: 0 auto;
+  }
+
 
   #section1 {
     grid-area: s01;
-    background-color: grey;
-
-}
+    /* background-image: url("../img/tandborste.jpg"); */
+  }
 
   #section2 {
       grid-area: s02;
-      background-color: grey;
+      /* background-image: url("../img/kaffe.jpg"); */
+      background-size: 100%;
+     
   }
 
   #section3 {
     grid-area: s03;
-    background-color: blue;
+    /* background-image: url("../img/glasburk.jpg"); */
+    background-size: cover;
 }
 
 #section4 {
     grid-area: s04;
-    background-color: violet;
+    /* background-image: url("../img/tomater.jpg"); */
+    background-size: 100%;
 }
 
 #section5 {
     grid-area: s05;
-    background-color: grey;
+    /* background-image: url("../img/anka.jpg"); */
+    background-size: cover;
 }
 
 #section6 {
     grid-area: s06;
-    background-color: grey;
+    /* background-image: url("../img/chips.jpg"); */
+    background-size: cover;
 }
 
 #section7 {
     grid-area: s07;
-    background-color: grey;
+    /* background-image: url("../img/frön.jpg"); */
 }
 
 #section8 {
     grid-area: s08;
-    background-color: grey;
+    /* background-image: url("../img/textil.jpg"); */
 }
 #section9 {
     grid-area: s09;
-    background-color: grey;
+    
 }
 #section10 {
     grid-area: s10;
@@ -106,16 +205,93 @@
 }
 #section11 {
     grid-area: s11;
-    background-color: grey;
+    background-color: white;
+    font-size: 4rem;
+    font-family: CabinSketch-Bold;
 }
 
 #section12 {
     grid-area: s12;
+    /* background-image: url("../img/omoss.jpg"); */
+    width: 4fr;
+}
+
+#section13 {
+    grid-area: s13;
+    background-color: grey;
+}
+
+#section14 {
+    grid-area: s14;
     background-color: grey;
 }
 
 footer {
     grid-area: foo;
-    background-color: pink;
+    background-color: black;
+    color: white;
+    height: 200px;
+    margin-top: 80px;
 }
 
+.kontakta-oss {
+    background-color: rgb(114, 99, 92);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; /* Lägg till detta för att ändra till kolumnlayout */
+}
+h1 {
+    margin-bottom: 10px; 
+    font-family: CabinSketch-Bold;
+    font-size: 3rem;
+}
+h2 {
+    margin-bottom: 10px;
+    font-family: CabinSketch-Bold;
+}
+
+p {
+    margin: 5px 0;
+    font-family: Fredericka the Great;
+}
+.facebook {
+    width: 50px;
+    height: 50px;
+}
+
+.twitter {
+    width: 50px;
+    height: 50px;
+}
+
+.instagram {
+    width: 50px;
+    height: 50px;
+}
+
+.omoss {
+
+    width: 50;
+    height: 50;
+}
+
+.logga {
+    width: 60px;
+    height: 60px;
+}
+
+.tandborste,
+.kaffe,
+.tomater,
+.textil,
+.glasburk,
+.frön,
+.anka,
+.chips {
+    width: 100%;
+    height: auto;
+}
