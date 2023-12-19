@@ -100,10 +100,11 @@
       display: flex;
       justify-content: space-between;
       list-style: none;
-      width: 100%;
+      width: 1230px;
       align-items: stretch;
       text-align: center;
       flex-basis: auto:
+      
   }
 
   a {
