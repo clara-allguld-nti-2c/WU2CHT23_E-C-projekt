@@ -71,7 +71,7 @@
 
     
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 80px 100px 200px 300px minmax(100px, 1fr);
+    grid-template-rows: 0.7fr 300px 3fr;
     column-gap: 30px;
     row-gap: 30px;
     grid-template-areas: 
@@ -88,6 +88,7 @@
       align-items: center;
       height: 90px;
       justify-content: space-around;
+      margin: auto;
   }
   
   main {
@@ -98,12 +99,11 @@
   
   ul {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       list-style: none;
       width: 1230px;
-      align-items: stretch;
-      text-align: center;
-      flex-basis: auto:
+      align-items: center;
+      flex-basis: auto;
       
   }
 
@@ -115,15 +115,15 @@
   }
 
   a:hover {
-      color: rgb(204, 46, 137);
+      color: rgba(57,129,183,255);
   }
 
   #text {
     grid-area: tex;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     font-family: 
     font-size: 1.5rem;
-    margin-top: 100px;
+    /* margin-top: 0; */
   }
  
   #section1,
@@ -138,7 +138,7 @@
   #section8 {
       background-size: cover;
       width: 175px;
-      height: 250px;
+      height: 200px;
       object-fit: cover;
       position: relative;
       overflow: hidden;
@@ -147,9 +147,13 @@
       align-items: center;
       text-align: center;
       display: block;
-    margin: 0 auto;
+        margin: 0 auto;
   }
 
+.section_hover:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
 
   #section1 {
     grid-area: s01;
@@ -213,8 +217,10 @@
 
 #section12 {
     grid-area: s12;
-    /* background-image: url("../img/omoss.jpg"); */
-    width: 4fr;
+    background-image: url("../img/omoss.jpg");
+    background-size: cover;
+    width: 100%;
+    height: auto;
 }
 
 #section13 {
@@ -225,6 +231,8 @@
 #section14 {
     grid-area: s14;
     background-color: grey;
+    height: 400px;
+    width: 800px;
 }
 
 footer {
@@ -296,3 +304,15 @@ p {
     width: 100%;
     height: auto;
 }
+
+.vertical-list {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+  }
+  
+  .vertical-list li {
+    display: block; 
+    margin-bottom: 10px;
+    width: 100%;
+  }
