@@ -253,14 +253,21 @@ footer {
     text-align: center;
     flex-direction: column; /* Lägg till detta för att ändra till kolumnlayout */
 }
+
 h1 {
     margin-bottom: 10px; 
     font-family: CabinSketch-Bold;
     font-size: 3rem;
 }
+
 h2 {
     margin-bottom: 10px;
     font-family: CabinSketch-Bold;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-family: CabinSketch-Regular;
 }
 
 p {
