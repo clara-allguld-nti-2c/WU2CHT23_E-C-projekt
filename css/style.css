@@ -97,14 +97,19 @@
       padding-top: 20px; 
   }
   
-  ul {
+  #ul1  {
       display: flex;
       justify-content: space-evenly;
       list-style: none;
       width: 1230px;
       align-items: center;
       flex-basis: auto;
-      
+  }
+
+  #ul2 {
+    list-style: none;
+    color: white;
+    
   }
 
   a {
@@ -312,14 +317,3 @@ p {
     height: auto;
 }
 
-.vertical-list {
-    list-style-type: none; 
-    padding: 0; 
-    margin: 0; 
-  }
-  
-  .vertical-list li {
-    display: block; 
-    margin-bottom: 10px;
-    width: 100%;
-  }
